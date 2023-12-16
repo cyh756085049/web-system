@@ -26,7 +26,8 @@
   * [Gulp](https://github.com/cyh756085049/web-system/web-project/gulp)
   * [Vite](https://github.com/cyh756085049/web-system/web-project/vite)
 * [浏览器](https://github.com/cyh756085049/web-system/web-brower)
-* [数据结构与算法](https://github.com/cyh756085049/web-system/algorithms)
+* [编程与算法](https://github.com/cyh756085049/web-system/algorithms)
   * [LeetCode](https://github.com/cyh756085049/web-system/algorithms/leetcode)
   * [剑指 Offer](https://github.com/cyh756085049/web-system/algorithms/sword-offer)
+  * [JS 编程题](https://github.com/cyh756085049/web-system/algorithms/js-program/README.md)
   * web 安全
