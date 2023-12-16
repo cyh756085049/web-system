@@ -10,5 +10,6 @@
 * [`promise`、`setTimeout`、`forEach` 共用情况分析](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/promise/README.md)
 * [修改print函数，输出0 - 99](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/print/README.md)
 * [实现 `createFlow` 异步串行函数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/create-flow/README.md)
+* [模拟实现 `localStorage` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/local-storage/README.md)
 
 ## 手写源码
