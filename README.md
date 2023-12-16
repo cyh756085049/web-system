@@ -29,5 +29,5 @@
 * [编程与算法](https://github.com/cyh756085049/web-system/algorithms)
   * [LeetCode](https://github.com/cyh756085049/web-system/algorithms/leetcode)
   * [剑指 Offer](https://github.com/cyh756085049/web-system/algorithms/sword-offer)
-  * [JS 编程题](https://github.com/cyh756085049/web-system/algorithms/js-program/README.md)
+  * [JS 编程题](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/README.md)
   * web 安全
