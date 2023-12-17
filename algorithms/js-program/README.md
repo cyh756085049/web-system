@@ -12,5 +12,6 @@
 * [实现 `createFlow` 异步串行函数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/create-flow/README.md)
 * [模拟实现 `localStorage` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/local-storage/README.md)
 * [模拟实现 `Object.is` 方法，判断两变量相等](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/equal/README.md)
+* [字符串中连续出现最多的字符和个数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/more-chars/README.md)
 
 ## 手写源码
