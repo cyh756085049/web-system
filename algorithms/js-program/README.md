@@ -14,5 +14,6 @@
 * [模拟实现 `Object.is` 方法，判断两变量相等](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/equal/README.md)
 * [字符串中连续出现最多的字符和个数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/more-chars/README.md)
 * [根据对 `EventLoop`的理解输出代码结果](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/event-loop/README.md)
+* [寻找连续和不连续的最大升序数量](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/fine-sequence/README.md)
 
 ## 手写源码
