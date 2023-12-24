@@ -17,5 +17,6 @@
 * [寻找连续和不连续的最大升序数量](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/fine-sequence/README.md)
 * [寻找字符串里出现最多的字符及次数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/most-char/README.md)
 * [寻找数组中每个元素的下一个最大元素](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/next-greater-element/README.md)
+* [寻找字符串中不匹配括号的位置，并以json格式输出](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/unmatch-json/README.md)
 
 ## 手写源码
