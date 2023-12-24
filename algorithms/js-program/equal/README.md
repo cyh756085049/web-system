@@ -1,4 +1,4 @@
-## [模拟实现判断两个变量是否相等算法](https://github.com/sisterAn/JavaScript-Algorithms/issues/116)
+## [模拟实现判断两个变量是否相等【阿里】](https://github.com/sisterAn/JavaScript-Algorithms/issues/116)
 ### 分析：
 `JavaScript` 提供三种不同的值比较操作：
 * 严格相等比较：`===`，不进行类型转换 (如果类型不同, 只是总会返回 false )

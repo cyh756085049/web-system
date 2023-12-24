@@ -1,4 +1,4 @@
-### [实现一个 `add` 方法](https://github.com/sisterAn/JavaScript-Algorithms/issues/103)
+### [实现一个 `add` 方法【字节】](https://github.com/sisterAn/JavaScript-Algorithms/issues/103)
 例如如下示例：
 ```js
 add(1)(2,3)(4).value() // 10

@@ -1,4 +1,4 @@
-### `promise`、`setTimeout`、`forEach` 共用情况分析
+### `promise`、`setTimeout`、`forEach` 共用情况分析【字节】
 #### 题目1：
 
 给定以下代码示例，输出代码运行结果

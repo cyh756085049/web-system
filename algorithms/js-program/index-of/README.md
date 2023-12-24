@@ -1,4 +1,4 @@
-### [模拟实现 `indexOf`](https://github.com/sisterAn/JavaScript-Algorithms/issues/58)
+### [模拟实现 `indexOf`【】](https://github.com/sisterAn/JavaScript-Algorithms/issues/58)
 `indexOf()` 方法有两种:
 * `String.prototype.indexOf(searchValue [, fromIndex])`： 返回从 `fromIndex` （默认为0）处开始搜索第一次出现的指定值的索引，如果未找到，则返回 -1
 * `Array.prototype.indexOf(searchElement[, fromIndex])`: 返回在数组中可以找到一个给定元素的第一个索引，如果未找到，则返回 -1

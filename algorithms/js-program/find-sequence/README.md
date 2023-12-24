@@ -1,4 +1,4 @@
-###  [找出连续最大升序的数量](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/description/)
+###  [找出连续最大升序的数量【腾讯】](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/description/)
 
 #### 题目
 给定示例如下：

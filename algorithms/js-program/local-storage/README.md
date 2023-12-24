@@ -1,4 +1,4 @@
-### 模拟实现 `localStorage` 方法
+### 模拟实现 `localStorage` 方法【百度、阿里】
 #### 分析 `localStorage` 特性
 * `storage` 接口包含的 `api`
 ```js
