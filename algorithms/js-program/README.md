@@ -20,5 +20,6 @@
 * [寻找字符串中不匹配括号的位置，并以json格式输出](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/unmatch-json/README.md)
 * [将自然数向上取整](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/round-up/README.md)
 * [将对象的键值互换](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/swap-keys-values/README.md)
+* [将数组中元素名称相同的元素进行合并](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/merge-params/README.md)
 
 ## 手写源码
