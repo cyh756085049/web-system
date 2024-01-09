@@ -23,3 +23,4 @@
 * [将数组中元素名称相同的元素进行合并](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/merge-params/README.md)
 
 ## 手写源码
+* [手写实现 `call` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/call/README.md)
