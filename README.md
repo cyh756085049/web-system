@@ -26,7 +26,7 @@
   * [Vite](https://github.com/cyh756085049/web-system/blob/main/web-project/vite)
 * [浏览器](https://github.com/cyh756085049/web-system/blob/main/web-brower)
 * [编程与算法](https://github.com/cyh756085049/web-system/blob/main/algorithms)
-  * [LeetCode](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/README.md)
+  * [LeetCode](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/REMAND.md)
   * [剑指 Offer](https://github.com/cyh756085049/web-system/blob/main/algorithms/sword-offer)
   * [JS 编程题](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/README.md)
   * web 安全

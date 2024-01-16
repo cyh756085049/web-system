@@ -1,9 +1,3 @@
-基于「前端瓶子君」的整理刷算法题
-
-参考链接：https://github.com/sisterAn/JavaScript-Algorithms
-
-![前端算法](static/img.png)
-
 ### 数组篇
 * [leetcode88.合并两个有序数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/mergeSortArray.js)
 * [leetcode1：两数之和【字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/towSum.js)
@@ -70,3 +64,7 @@
 * [求二叉树中两个指定节点间的最短距离【字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/shortestDistance.js)
 * [230. 二叉搜索树中第K小的元素【腾讯】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/kthSmallest.js)
 * [226. 翻转二叉树【美团】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/invertTree.js)
+
+> 基于「前端瓶子君」的整理刷算法题
+> 
+> 参考链接：https://github.com/sisterAn/JavaScript-Algorithms
