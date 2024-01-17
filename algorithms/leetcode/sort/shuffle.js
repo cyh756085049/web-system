@@ -1,4 +1,4 @@
-// 打乱一个没有重复元素的数组
+// 384.打乱一个没有重复元素的数组 https://leetcode.cn/problems/shuffle-an-array/
 const Solution = function (nums) {
     this.nums = nums;
 }

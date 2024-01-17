@@ -67,7 +67,7 @@
 
 ### 排序
 [快排算法](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/quickSort.js)
-[打乱数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/shuffle.js)
+[384.打乱数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/shuffle.js)
 
 > 基于「前端瓶子君」的整理刷算法题
 > 
