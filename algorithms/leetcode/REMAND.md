@@ -65,6 +65,9 @@
 * [230. 二叉搜索树中第K小的元素【腾讯】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/kthSmallest.js)
 * [226. 翻转二叉树【美团】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/invertTree.js)
 
+### 排序
+[快排算法](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/quickSort.js)
+
 > 基于「前端瓶子君」的整理刷算法题
 > 
 > 参考链接：https://github.com/sisterAn/JavaScript-Algorithms
