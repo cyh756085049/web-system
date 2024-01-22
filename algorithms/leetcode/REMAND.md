@@ -66,12 +66,11 @@
 * [226. 翻转二叉树【美团】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/invertTree.js)
 
 ### 排序
-[快排算法](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/quickSort.js)
-[384.打乱数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/shuffle.js)
+* [快排算法](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/quickSort.js)
+* [384.打乱数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/sort/shuffle.js)
 
-#### [技巧算法篇](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/other/README.md)
-#### [动态规划篇](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/README.md)
+### [技巧算法篇](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/other/README.md)
+### [动态规划篇](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/README.md)
 
-> 基于「前端瓶子君」的整理刷算法题
 > 
 > 参考链接：https://github.com/sisterAn/JavaScript-Algorithms
