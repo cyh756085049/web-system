@@ -11,3 +11,6 @@
 * [leetcode42：接雨水问题](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/trap.js)
 * [leetcode380：O(1) 时间插入、删除和获取随机元素【字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/randomizedSet.js)
 * [剑指 Offer 50. 第一个只出现一次的字符](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/firstUniqChar.js)
+
+hot 100
+* [leetcode1. 两数之和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q1_twoSum.js)
