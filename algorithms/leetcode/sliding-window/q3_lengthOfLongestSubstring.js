@@ -7,7 +7,7 @@
  */
 const lengthOfLongestSubstring = (s) => {
     if (s.length <= 1) {
-        return s;
+        return s.length || 0;
     }
 
     // 使用哈希表保存数组中不重复的字符
