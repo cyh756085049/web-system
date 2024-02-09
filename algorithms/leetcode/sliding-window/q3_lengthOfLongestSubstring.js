@@ -1,3 +1,10 @@
+/**
+ * 3. 无重复字符的最长子串 https://leetcode.cn/problems/longest-substring-without-repeating-characters/?envType=study-plan-v2&envId=top-100-liked
+ * 给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度。
+ * 思路：滑动窗口，左右指针计算最大长度，哈希表存储无重复字符子串
+ * @param {string} s
+ * @return {number}
+ */
 const lengthOfLongestSubstring = (s) => {
     if (s.length <= 1) {
         return s;
