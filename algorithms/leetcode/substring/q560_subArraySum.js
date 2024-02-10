@@ -5,6 +5,7 @@
  * @param {number} k
  * @return {number}
  */
+// 方法一：前缀和 + 双层遍历 leetcode 超时
 const subArraySum = (nums, k) => {
     // 构建前缀和
     const prefixSum = [];
@@ -25,6 +26,27 @@ const subArraySum = (nums, k) => {
     return count;
 }
 
+// 方法二：前缀和 + 哈希表
+const subArraySumMap = (nums, k) => {
+    // 当前前缀和
+    let prefixSum = 0;
+    // 存储前缀和及出现的次数
+    const map = new Map();
+    // 结果值
+    let count = 0;
+    map.set(0, 1);
+    for (let i = 0; i < nums.length; i++) {
+        prefixSum += nums[i];
+        if (map.get(prefixSum - k)) {
+            count += map.get(prefixSum - k);
+        }
+
+        map.set(prefixSum, (map.get(prefixSum) || 0) + 1);
+    }
+
+    return count;
+}
+
 /**
  * 输入：nums = [1,1,1], k = 2
  * 输出：2
@@ -33,4 +55,4 @@ const subArraySum = (nums, k) => {
  */
 
 const nums = [1,2,3];
-console.log('和为k的子数组：', subArraySum(nums, 3));
+console.log('和为k的子数组：', subArraySum(nums, 3), subArraySumMap(nums, 3));
