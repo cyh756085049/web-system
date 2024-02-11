@@ -9,3 +9,4 @@
 * [300. 最长递增子序列](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/lengthOfLIS.js)
 * [152. 乘积最大子数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/maxProduct.js)
 * [416. 分割等和子集](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/canPartition.js)
+* [53. 最大子数组和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/q53_maxSubArray.js)
