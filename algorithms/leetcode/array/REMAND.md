@@ -13,4 +13,4 @@
 * [剑指 Offer 50. 第一个只出现一次的字符](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/firstUniqChar.js)
 
 hot 100
-[leetcode56. 合并区间](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/firstUniqChar.js)
+[leetcode56. 合并区间](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q56_merge.js)
