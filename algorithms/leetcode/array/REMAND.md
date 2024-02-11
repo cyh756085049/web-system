@@ -14,3 +14,4 @@
 
 hot 100
 [leetcode56. 合并区间](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q56_merge.js)
+[leetcode189. 轮转数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q189_rotate.js)
