@@ -8,3 +8,4 @@
 * [leetcode：面试题02.05.链表求和【快手】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/addTwoNumbers.js)
 * [leetcode 234. 回文链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q234_isPalindrome.js)
 * [leetcode 142. 环形链表II](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q142_detectCycle.js)
+* [leetcode 19. 删除链表的倒数第N个结点](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q19_removeNthFromEnd.js)
