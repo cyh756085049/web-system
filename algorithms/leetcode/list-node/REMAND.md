@@ -9,3 +9,4 @@
 * [leetcode 234. 回文链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q234_isPalindrome.js)
 * [leetcode 142. 环形链表II](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q142_detectCycle.js)
 * [leetcode 19. 删除链表的倒数第N个结点](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q19_removeNthFromEnd.js)
+* [leetcode 24. 两两交换链表中的节点](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q24_swapPairs.js)
