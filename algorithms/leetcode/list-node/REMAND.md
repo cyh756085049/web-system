@@ -13,3 +13,4 @@
 * [leetcode 25. k个一组翻转链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q25_reverseKGroup.js)
 * [leetcode 138.随机链表的复制](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q138_copyRandomList.js)
 * [leetcode 148.排序链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q148_sortList.js)
+* [leetcode 23.合并k个升序链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/list-node/q23_mergeKLists.js)
