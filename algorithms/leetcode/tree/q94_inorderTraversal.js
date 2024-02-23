@@ -11,7 +11,7 @@ function TreeNode(val, left, right) {
  * @param root
  * @return {*[]}
  */
-const inorderTraversal = (root) => {
+const q94_inorderTraversal = (root) => {
     const res = [];
 
     const inorderNode = (root) => {

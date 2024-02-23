@@ -9,7 +9,7 @@ function TreeNode(val, left, right) {
  * @param root
  * @return {*}
  */
-const invertTree = (root) => {
+const q226_invertTree = (root) => {
     if (root === null) {
         return root;
     }
@@ -19,8 +19,8 @@ const invertTree = (root) => {
     root.left = root.right;
     root.right = temp;
     // 遍历左子树
-    invertTree(root.left);
+    q226_invertTree(root.left);
     // 遍历右子树
-    invertTree(root.right);
+    q226_invertTree(root.right);
     return root;
 }

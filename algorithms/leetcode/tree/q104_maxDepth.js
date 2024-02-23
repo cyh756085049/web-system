@@ -11,13 +11,13 @@ function TreeNode(val, left, right) {
  * 递归实现
  * @param root
  */
-const maxDepth = (root) => {
+const q104_maxDepth = (root) => {
     if (!root) {
         return 0;
     }
 
-    const leftDepth = maxDepth(root.left);
-    const rightDepth = maxDepth(root.right);
+    const leftDepth = q104_maxDepth(root.left);
+    const rightDepth = q104_maxDepth(root.right);
 
     return Math.max(leftDepth, rightDepth) + 1;
 }
