@@ -15,3 +15,4 @@
 * [226. 翻转二叉树【美团】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/invertTree.js)
 * [543. 二叉树的直径](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q543_diameterOfBinaryTree.js)
 * [108. 将有序数组转换为二叉搜索树](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q108_sortedArrayToBST.js)
+* [98. 验证二叉搜索树](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q98_isValidBST.js)
