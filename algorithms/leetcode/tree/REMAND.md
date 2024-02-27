@@ -18,3 +18,4 @@
 * [98. 验证二叉搜索树](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q98_isValidBST.js)
 * [230.二叉搜索树中第K小的元素](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q230_kthSmallest.js)
 * [199. 二叉树的右视图](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q199_rigthSideView.js)
+* [114. 二叉树展开为链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q114_flatten.js)
