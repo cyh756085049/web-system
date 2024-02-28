@@ -10,7 +10,7 @@ function TreeNode(val, left, right) {
  * @param inorder
  * @return {TreeNode|null}
  */
-const buildTree = (preorder, inorder) => {
+const q105_buildTree = (preorder, inorder) => {
     if (!preorder.length) {
         return null;
     }
@@ -28,11 +28,11 @@ const buildTree = (preorder, inorder) => {
     // 前序遍历的右子树
     const preorderRight = preorder.slice(index + 1);
 
-    node.left = buildTree(preorderLeft, inorderLeft);
-    node.right = buildTree(preorderRight, inorderRight);
+    node.left = q105_buildTree(preorderLeft, inorderLeft);
+    node.right = q105_buildTree(preorderRight, inorderRight);
 
     return node;
 }
 
 const preorder = [3,9,20,15,7], inorder = [9,3,15,20,7];
-console.log(buildTree(preorder, inorder));
+console.log(q105_buildTree(preorder, inorder));
