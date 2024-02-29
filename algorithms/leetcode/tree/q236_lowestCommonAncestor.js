@@ -14,7 +14,7 @@ function TreeNode(val) {
  * @param q
  * @return {*}
  */
-const lowestCommonAncestor = (root, p, q) => {
+const q236_lowestCommonAncestor = (root, p, q) => {
     // 当根节点为空或p为根节点或q为根节点的时候，最近公共祖先是根节点。
     if (root === null || p === root || q === root) {
         return root;
@@ -23,8 +23,8 @@ const lowestCommonAncestor = (root, p, q) => {
     // p 或 q 不为根节点的时候，遍历左右子树，寻找最近公共祖先
     // 如果 p、q在左子树的最近公共祖先为空，那么p、q应该是位于右子树，最终二叉树的最近公共祖先是位于右子树上的 p、q 最近公共组先，反之亦然。
     // 如果 p 、 q 节点在左右子树的最近公共祖先都为空，则返回 root
-    const left = lowestCommonAncestor(root.left, p, q);
-    const right = lowestCommonAncestor(root.right, p, q);
+    const left = q236_lowestCommonAncestor(root.left, p, q);
+    const right = q236_lowestCommonAncestor(root.right, p, q);
 
     if (left === null) {
         return right;

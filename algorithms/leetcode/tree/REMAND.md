@@ -6,7 +6,7 @@
 * [107. 二叉树的层序遍历II【字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/levelorderBottom.js)
 * [105. 从前序与中序遍历序列构造二叉树](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q105_buildTree.js)
 * [104. 二叉树的最大深度【腾讯】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/maxDepth.js)
-* [236. 二叉树的最近公共祖先【腾讯、字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/lowestCommonAncestor.js)
+* [236. 二叉树的最近公共祖先【腾讯、字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q236_lowestCommonAncestor.js)
 * [110. 平衡二叉树【剑指offer】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/isBalanced.js)
 * [112. 路径总和【字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/hasPathSum.js)
 * [101. 对称二叉树【剑指offer】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/isSymmetric.js)
@@ -20,3 +20,4 @@
 * [199. 二叉树的右视图](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q199_rigthSideView.js)
 * [114. 二叉树展开为链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q114_flatten.js)
 * [437. 路径总和 III](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q437_pathSum.js)
+* [124. 二叉树中的最大路径和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q124_maxPathSum.js)
