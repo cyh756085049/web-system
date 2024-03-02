@@ -10,7 +10,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-const singleNumber = (nums) => {
+const q136_singleNumber = (nums) => {
     let res = 0;
     for (let num of nums) {
         res ^= num;
@@ -28,4 +28,4 @@ const singleNumber = (nums) => {
  */
 
 const nums = [4,1,2,1,2];
-console.log(singleNumber(nums));
+console.log(q136_singleNumber(nums));
