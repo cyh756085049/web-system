@@ -13,3 +13,4 @@
 * [62. 不同路径](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/q62_uniquePaths.js)
 * [64. 最小路径和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/q64_minPathSum.js)
 * [5. 最长回文子串](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/q5_longestPalindrome.js)
+* [1143. 最长公共子序列](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/dp/q1143_longestCommonSubsequence.js)
