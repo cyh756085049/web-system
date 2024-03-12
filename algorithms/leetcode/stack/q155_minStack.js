@@ -4,8 +4,8 @@
  * @constructor
  */
 const MinStack = function () {
-    this.mainStack = [];
-    this.minStack = [];
+    this.mainStack = []; // 维护主栈
+    this.minStack = []; // 维护最小栈，栈顶元素始终为最小值
 }
 
 /**
@@ -13,6 +13,7 @@ const MinStack = function () {
  * @param val
  */
 MinStack.prototype.push = function (val) {
+    // 最小栈为空 或者 最小栈顶元素大于当前元素
     if (this.minStack.length === 0 || this.minStack[this.minStack.length - 1] >= val) {
         this.minStack.push(val);
     }
@@ -23,7 +24,9 @@ MinStack.prototype.push = function (val) {
  * 删除堆栈顶部的元素
  */
 MinStack.prototype.pop = function () {
+    // 先删除主栈栈顶元素，再更新最小栈
     const topValue = this.mainStack.pop();
+    // 如果最小栈中有元素，且栈顶元素等于主栈栈顶元素，则删除最小栈栈顶元素
     if (this.minStack.length > 0 && this.minStack[this.minStack.length - 1] === topValue) {
         this.minStack.pop();
     }
