@@ -57,6 +57,10 @@
 
 `hooks` 的更新逻辑本质上调用的是 `updateReducer`，会把待更新的队列 `pendingQueue` 拿出来，合并到 `baseQueue`，循环进行更新，就可以从 `useState` 中得到最新的值。
 
+![React useState原理](https://p.ipic.vip/kaceem.png)
+
+![setData 更新原理](https://p.ipic.vip/eglis5.png)
+
 <img src="./image/function-state.png">
 
 ### 在 React 类组件中，为什么修改状态要使用 setState 而不是用 this.state.xxx = xxx？

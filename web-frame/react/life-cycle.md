@@ -21,6 +21,8 @@ React 的大部分生命周期的执行，都在 `mountClassInstance` 和`update
 * 组件更新阶段：`componentWillReceiveProps`[父组件更新带来的`props` 改变] / `getDerivedStateFromProp`[类组件上直接绑定的静态方法，传入 `props`，`state`, 返回合并后的 `state`] -> `shouldComponentUpdate`[一般用于性能优化，返回值决定是否重新渲染类组件] -> `componentWillUpdate`[在更新之前，此时的 `DOM` 还没有更新, 可以获取组件更新之前的状态在，可以做一些获取 `DOM` 的操作] -> `render`[创建 `React.element` 元素的过程] -> `getSnapshotBeforeUpdate`[获取更新前 DOM 的状态, 配合`componentDidUpdate` 一起使用，计算形成一个 `snapShot` 传递给 `componentDidUpdate` ，保存一次更新前的信息] -> `componentDidUpdate`[[`DOM` 已经创建完，可以做一些基于 `DOM` 操作， 如 `DOM` 事件监听器]
 * 组件销毁阶段：`componentWillUnmount`[做一些收尾工作，比如清除一些可能造成内存泄漏的定时器，延时器，或者是一些事件监听器]
 
+![React 类组件生命周期](https://p.ipic.vip/yj91v1.png)
+
 <img src="./image/life-cycle.png">
 
 ### 函数组件的生命周期替换方案是什么样的？
