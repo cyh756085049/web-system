@@ -22,7 +22,7 @@
 
 但是当在事件执行函数中，使用 `setTimeout、Promise` 等异步函数操作 `setState` 更新，则会打破批处理更新规则，因为`setTimeout、Promise` 创建了新的宏任务，会在下一轮事件循环中执行，而函数末尾将 `isBatchingEventUpdates` 设为了 `false`，所以执行更新时`isBatchingEventUpdates` 为 `false`, 批量更新规则被打破，因此 `setTimeout` 的执行内容是没有批量更新的。
 
-<img src="./image/class-state.png">
+<img src="image/classState.png">
 
 `React flushSync` 更新优先级顺序案例：
 
