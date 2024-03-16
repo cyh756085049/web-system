@@ -22,12 +22,11 @@
 
 但是当在事件执行函数中，使用 `setTimeout、Promise` 等异步函数操作 `setState` 更新，则会打破批处理更新规则，因为`setTimeout、Promise` 创建了新的宏任务，会在下一轮事件循环中执行，而函数末尾将 `isBatchingEventUpdates` 设为了 `false`，所以执行更新时`isBatchingEventUpdates` 为 `false`, 批量更新规则被打破，因此 `setTimeout` 的执行内容是没有批量更新的。
 
-![setData 更新原理](https://p.ipic.vip/eglis5.png)
+<img src="./image/class-state.png">
 
 `React flushSync` 更新优先级顺序案例：
 
 ![img](https://p.ipic.vip/2jjnvy.jpg)
-
 
 
 > **注意点**：上述源码流程图是基于 `React v18` 之前的版本分析，在setTimeout等异步函数中，执行多个setState，会导致批量更新规则被打破，使用`ReactDom` 的 `unstable_batchedUpdates` 函数可以手动合并，实现在异步函数中的批量更新。在 `React v18` 中 `setState` 都是批量更新机制了，无需再手动处理。
@@ -58,7 +57,7 @@
 
 `hooks` 的更新逻辑本质上调用的是 `updateReducer`，会把待更新的队列 `pendingQueue` 拿出来，合并到 `baseQueue`，循环进行更新，就可以从 `useState` 中得到最新的值。
 
-![React useState原理](https://p.ipic.vip/kaceem.png)
+<img src="./image/function-state.png">
 
 ### 在 React 类组件中，为什么修改状态要使用 setState 而不是用 this.state.xxx = xxx？
 
