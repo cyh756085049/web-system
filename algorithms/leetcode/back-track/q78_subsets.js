@@ -13,7 +13,7 @@ const subsets = (nums) => {
         // 指针越界
         if (index === nums.length) {
             // 将其加入到子集数组中
-            res.push(list.slice());
+            res.push([...list]);
             return;
         }
         // 选择这个数
