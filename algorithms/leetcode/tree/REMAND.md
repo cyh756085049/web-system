@@ -21,3 +21,4 @@
 * [114. 二叉树展开为链表](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q114_flatten.js)
 * [437. 路径总和 III](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q437_pathSum.js)
 * [124. 二叉树中的最大路径和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q124_maxPathSum.js)
+* [257. 二叉树的所有路径【字节】](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/tree/q257_binaryTreePaths.js)
