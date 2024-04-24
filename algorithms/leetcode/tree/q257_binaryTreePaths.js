@@ -33,9 +33,41 @@ const binaryTreePaths = (root) => {
     return resPaths;
 }
 
+// 广度优先遍历，队列实现
+const binaryTreePathsByQueue = (root) => {
+    const paths = [];
+    if (root === null) {
+        return paths;
+    }
+
+    const node_queue = [root];
+    const path_queue = [root.val.toString()];
+
+    while (node_queue.length) {
+        const node = node_queue.shift();
+        const path = path_queue.shift();
+
+        if (node.left === null && node.right === null) {
+            paths.push(path);
+        } else {
+            if (node.left !== null) {
+                node_queue.push(node.left);
+                path_queue.push(path + '->' + node.left.val.toString());
+            }
+            if (node.right !== null) {
+                node_queue.push(node.right);
+                path_queue.push(path + '->' + node.right.val.toString());
+            }
+        }
+    }
+
+    return paths;
+}
+
 const root = new TreeNode(1);
 const left = root.left = new TreeNode(2);
 root.right = new TreeNode(3);
 left.right = new TreeNode(5);
 
-console.log(binaryTreePaths(root));
+console.log('深度优先遍历：', binaryTreePaths(root));
+console.log('广度优先遍历：', binaryTreePathsByQueue(root));
