@@ -6,3 +6,4 @@ hot 100
 * [39. 组合总和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/back-track/q39_combinationSum.js)
 * [22. 括号生成](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/back-track/q22_generateParenthesis.js)
 * [79. 单词搜索](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/back-track/q79_exist.js)
+* [131. 分割回文串](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/back-track/q131_partition.js)
