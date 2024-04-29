@@ -1,7 +1,7 @@
 ### 前端知识体系
 * [前端基础](https://github.com/cyh756085049/web-system/blob/main/web-basics)
   * [JavaScript](https://github.com/cyh756085049/web-system/blob/main/web-basics/javascript/README.md)
-  * [TypeScript](https://github.com/cyh756085049/web-system/blob/main/web-basics/typescript)
+  * [TypeScript](https://github.com/cyh756085049/web-system/blob/main/web-basics/typescript/README.md)
   * [CSS](https://github.com/cyh756085049/web-system/blob/main/web-basics/css)
   * [HTML](https://github.com/cyh756085049/web-system/blob/main/web-basics/html)
 * [前端 JS 库&框架](https://github.com/cyh756085049/web-system/blob/main/web-frame)
