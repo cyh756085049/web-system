@@ -4,3 +4,4 @@
 * [169. 多数元素](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/other/q169_majorityElement.js)
 * [75. 颜色分类](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/other/q75_sortColors.js)
 * [287. 寻找重复数](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/other/q75_sortColors.js)
+* [31. 下一个排列](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/other/q31_nextPermutation.js)
