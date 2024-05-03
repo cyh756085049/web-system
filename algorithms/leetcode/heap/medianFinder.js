@@ -34,6 +34,19 @@ MedianFinder.prototype.addNum = (num) => {
     }
 }
 
+/**
+ * @return {number}
+ */
+MedianFinder.prototype.findMedian = function() {
+    if (this.min_heap.heap.length === this.max_heap.heap.length) {
+        return (this.min_heap.heap[0] + this.max_heap.heap[0]) / 2;
+    } else if (this.min_heap.heap.length > this.max_heap.heap.length) {
+        return this.min_heap.heap[0];
+    } else {
+        return this.max_heap.heap[0];
+    }
+};
+
 let MinHeap = () => {
     let heap = [];
     // 堆中元素数量
