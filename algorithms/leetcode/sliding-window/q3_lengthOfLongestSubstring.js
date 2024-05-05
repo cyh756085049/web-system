@@ -31,6 +31,39 @@ const lengthOfLongestSubstring = (s) => {
     return longestLength;
 }
 
+function lengthOfLongestSubstringII(s) {
+    // 字符串长度小于等于1且不为空字符时，最长子串长度为字符串长度，否则为0，用例 ' '
+    if (s.length <= 1) {
+        return s.length && s[0] ? s.length : 0;
+    }
+    // 最长无重复子串长度
+    let maxLength = 0;
+    // 左右指针，滑动窗口移动
+    let left = 0, right = 0;
+    // 滑动窗口的无重复字符的字符串
+    let str = '';
+    for (let i = 0; i < s.length; i++) {
+        // 获取滑动窗口字符串中是否存在当前字符
+        const index = str.indexOf(s[i]);
+        // 如果存在，则需要更新子串最大长度，左右指针、滑动窗口子串
+        if (index !== -1) {
+            maxLength = Math.max(maxLength, right - left);
+            // 左指针要更新到当前重复字符的下一个位置开始
+            left = left + 1 + index;
+            // 滑动窗口子串要根据当前存在的重复字符位置截取，并拼接新的字符更新
+            str = str.slice(index + 1) + s[i];
+            right++;
+        } else {
+            right++;
+            str += s[i];
+        }
+    }
+
+    // 循环结束后， 如果都没有重复的子串，仍然需要更新一次，保证得到无重复最长子串，如用例 'au'
+    maxLength = Math.max(maxLength, right - left);
+    return maxLength;
+}
+
 /**
  * 输入: s = "abcabcbb"
  * 输出: 3
@@ -41,3 +74,4 @@ const lengthOfLongestSubstring = (s) => {
 
 const s1 = 'abcabcbb', s2 = "pwwkew";
 console.log('无重复字符的最长子串', lengthOfLongestSubstring(s1), lengthOfLongestSubstring(s2));
+console.log(lengthOfLongestSubstringII('au'));
