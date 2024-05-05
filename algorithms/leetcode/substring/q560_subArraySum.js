@@ -37,6 +37,7 @@ const subArraySumMap = (nums, k) => {
     map.set(0, 1);
     for (let i = 0; i < nums.length; i++) {
         prefixSum += nums[i];
+        // 当前前缀和 - k = 之前的前缀和存在 即 当前前缀和 - 之前的前缀和 = k 存在，则和为k的连续子数组加1
         if (map.get(prefixSum - k)) {
             count += map.get(prefixSum - k);
         }
@@ -54,5 +55,7 @@ const subArraySumMap = (nums, k) => {
  * 输出：2
  */
 
-const nums = [1,2,3];
-console.log('和为k的子数组：', subArraySum(nums, 3), subArraySumMap(nums, 3));
+// const nums = [1,2,3];
+const nums = [1,1,1];
+// console.log('和为k的子数组：', subArraySum(nums, 3), subArraySumMap(nums, 3));
+console.log('和为k的子数组：', subArraySumMap(nums, 2));
