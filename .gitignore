@@ -4,6 +4,9 @@
 *.iml
 *.ipr
 
+### icloud
+*.icloud
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

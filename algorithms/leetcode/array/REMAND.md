@@ -17,3 +17,4 @@ hot 100
 * [leetcode189. 轮转数组](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q189_rotate.js)
 * [leetcode238. 除自身以外数组的乘积](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q238_productExceptSelf.js)
 * [128. 最长连续序列](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q128_longestConsecutive.js)
+* [53. 最大子数组和](https://github.com/cyh756085049/web-system/blob/main/algorithms/leetcode/array/q53_maxSubArray.js)
