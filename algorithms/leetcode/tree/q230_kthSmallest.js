@@ -37,3 +37,21 @@ const kthSmallest = (root, k) => {
     return null;
 }
 
+// 递归，使用中序遍历
+const kthSmallestDfs = function(root, k) {
+    // 二叉搜索树的中序遍历结果即树节点值的从小到大排序
+    let res = null;
+    const inorderTraversal = (node) => {
+        if (node !== null && k > 0) {
+            inorderTraversal(node.left);
+            k--;
+            if (k === 0) {
+                res = node.val;
+            }
+            inorderTraversal(node.right);
+        }
+    }
+    inorderTraversal(root);
+    return res;
+};
+
