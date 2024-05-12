@@ -19,7 +19,7 @@ const kthSmallest = (root, k) => {
     const stack = [];
     let node = root;
 
-    while (node || stack.length > 0) {
+    while ((node || stack.length > 0) && k > 0) {
         while (node) {
             stack.push(node);
             node = node.left;
