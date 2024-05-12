@@ -32,3 +32,30 @@ const flatten = (root) => {
     }
     root.right = right;
 }
+
+const flattenByStack = (root) => {
+    if (root === null) {
+        return;
+    }
+
+    const stack = [];
+    let pre = null;
+    stack.push(root);
+
+    while (stack.length > 0) {
+        const cur = stack.pop();
+        if (pre !== null) {
+            pre.left = null;
+            pre.right = cur;
+        }
+
+        pre = cur;
+        if (cur.right) {
+            stack.push(cur.right);
+        }
+
+        if (cur.left) {
+            stack.push(cur.left);
+        }
+    }
+}
