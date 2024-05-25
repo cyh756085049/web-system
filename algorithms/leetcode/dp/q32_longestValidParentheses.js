@@ -28,7 +28,8 @@ const longestValidParentheses = (s) => {
 }
 
 /**
- * 思路：动态规划，参考题解https://leetcode.cn/problems/longest-valid-parentheses/solutions/3833/zui-chang-you-xiao-gua-hao-by-powcai/?envType=study-plan-v2&envId=top-100-liked
+ * 思路：动态规划，参考题解
+ * https://leetcode.cn/problems/longest-valid-parentheses/solutions/3833/zui-chang-you-xiao-gua-hao-by-powcai/?envType=study-plan-v2&envId=top-100-liked
  * 可看题解最下方的图例结合理解
  * 当 s[i] 为 (, dp[i] 必然等于 0，因为不可能组成有效的括号；
  * 当 s[i] 为 )
