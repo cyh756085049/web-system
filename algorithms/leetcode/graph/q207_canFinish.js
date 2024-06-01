@@ -1,5 +1,5 @@
 /** 207. 课程表
- * 思路：拓扑排序 入度、出度、有向无环图、邻接表、队列
+ * 思路：拓扑排序 入度、出度、有向无环图、邻接表、队列su
  * 题解：https://leetcode.cn/problems/course-schedule/solutions/250377/bao-mu-shi-ti-jie-shou-ba-shou-da-tong-tuo-bu-pai-/?envType=study-plan-v2&envId=top-100-liked
  * @param numCourses
  * @param prerequisites

@@ -26,6 +26,32 @@ const rotate = (matrix) => {
 }
 
 /**
+ Do not return anything, modify matrix in-place instead.
+ */
+function rotateII(matrix: number[][]): void {
+    let top = 0;
+    let bottom = matrix.length - 1;
+
+    while (top < bottom) {
+        swap(matrix, top, bottom);
+        top++;
+        bottom--;
+    }
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < i; j++) {
+            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+        }
+    }
+};
+
+const swap = (nums, i, j) => {
+    const temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
+}
+
+/**
  * 输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
  * 输出：[[7,4,1],[8,5,2],[9,6,3]]
  *
