@@ -31,6 +31,28 @@ const jump = (nums) => {
     return step;
 }
 
+// 双层循环基础版本，不断更新能跳到的最远距离
+const jumpI = function(nums) {
+    let step = 0;
+    let start = 0;
+    let end = 1;
+
+    while (end < nums.length) {
+        let maxPosition = 0;
+
+        for (let i = start; i < end; i++) {
+            // 更新跳到的最远位置
+            maxPosition = Math.max(maxPosition, i + nums[i]);
+        }
+
+        start = end; // 下一次起跳开始的位置
+        end = maxPosition + 1; // 下一次起跳结束的位置
+        step++; // 跳跃次数
+    }
+
+    return step;
+};
+
 /**
  * 输入: nums = [2,3,1,1,4]
  * 输出: 2
@@ -38,4 +60,5 @@ const jump = (nums) => {
  *      从下标为 0 跳到下标为 1 的位置，跳 1 步，然后跳 3 步到达数组的最后一个位置。
  */
 const nums = [2,3,1,1,4];
-console.log(jump(nums));
+console.log('优化版本', jump(nums));
+console.log('基础版本', jumpI(nums));

@@ -36,3 +36,22 @@ const q236_lowestCommonAncestor = (root, p, q) => {
 
     return root;
 }
+
+const root = new TreeNode(3);
+const left = new TreeNode(5);
+const right = new TreeNode(1);
+const leftLeft = new TreeNode(6);
+const leftRight = new TreeNode(2);
+const rightLeft = new TreeNode(0);
+const rightRight = new TreeNode(8);
+
+left.left = leftLeft;
+left.right = leftRight;
+
+right.left = rightLeft;
+right.right = rightRight;
+
+root.left = left;
+root.right = right;
+
+console.log(q236_lowestCommonAncestor(root, leftLeft, leftRight));
