@@ -29,7 +29,7 @@ const longestPalindrome = (s) => {
     // 遍历二维数组对角线上方的所有元素，因为 s[i...j] 表示s的一个子串，
     // 因此 i <= j，只需要填写表格对角线以上的部分
     for (let j = 1; j < length; j++) {
-        for (i = 0; i < j; i++) {
+        for (let i = 0; i < j; i++) {
             // i和j两个字符不相等，说明不是回文子串
             if (s[i] !== s[j]) {
                 dp[i][j] = false;
@@ -90,6 +90,7 @@ const palindrome = (s, left, right) => {
  * 输出："aca"  (j - 1 - (i + 1)) < 1
  */
 
-const s = 'aacabdkacaa';
+// const s = 'aacabdkacaa';
+const s = 'ac';
 console.log(longestPalindrome(s));
 console.log(longestPalindromeII(s));
