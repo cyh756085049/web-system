@@ -8,7 +8,7 @@ const maxSubArray = (nums) => {
     let maxValue = nums[0], curMaxValue = nums[0];
 
     // 动态规划，状态转移方程 = 前缀和和当前值比较，哪个大选哪个
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 1; i < nums.length; i++) {
         curMaxValue = Math.max(curMaxValue + nums[i], nums[i]);
         maxValue = Math.max(maxValue, curMaxValue);
     }
@@ -16,5 +16,5 @@ const maxSubArray = (nums) => {
     return maxValue;
 }
 
-const nums = [-2,1,-3,4,-1,2,1,-5,4];
+const nums = [5,4,-1,7,8];
 console.log('53. 最大子数组和', maxSubArray(nums));
