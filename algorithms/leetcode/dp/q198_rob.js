@@ -1,5 +1,5 @@
 
-const rob = (nums) => {
+const q198_rob = (nums) => {
     if (!nums || !nums.length) {
         return 0;
     }
@@ -26,4 +26,4 @@ const rob = (nums) => {
 
 const nums = [2,7,9,3,1];
 const nums1 = [1,2,3,1];
-console.log(rob(nums), rob(nums1));
+console.log(q198_rob(nums), q198_rob(nums1));

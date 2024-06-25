@@ -10,7 +10,7 @@ function ListNode(val, next) {
  */
 // 标志法
 // 时间复杂度 O(n) 空间复杂度 O(n)
-const hasCycle = (head) => {
+const q141_hasCycle = (head) => {
     while (head) {
         if (head.flag) {
             return true;
@@ -63,5 +63,5 @@ const list11 = cycleList.next = new ListNode(2);
 const list12 = list11.next = new ListNode(4);
 list12.next = new ListNode(2);
 list12.next.next = null;
-console.log('判断单链表是否有环', hasCycle(cycleList));
+console.log('判断单链表是否有环', q141_hasCycle(cycleList));
 console.log('判断单链表是否有环', hasCycleII(cycleList));

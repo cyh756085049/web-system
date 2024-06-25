@@ -10,7 +10,7 @@ function ListNode(val, next) {
  * @param list2
  * @returns {*|null}
  */
-const mergeTwoLists = (list1, list2) => {
+const q21_mergeTwoLists = (list1, list2) => {
     if (list1 === null) {
         return list2;
     }
@@ -45,4 +45,4 @@ const list21 = list2.next = new ListNode(3);
 list21.next = new ListNode(4);
 
 console.log(list1, list2);
-console.log('合并两个有序链表', mergeTwoLists(list1, list2));
+console.log('合并两个有序链表', q21_mergeTwoLists(list1, list2));

@@ -10,7 +10,7 @@ function ListNode(val, next) {
  * @param headB
  * @returns {*|null}
  */
-const getIntersectionNode = (headA, headB) => {
+const q160_getIntersectionNode = (headA, headB) => {
     if (headA === null || headB === null) {
         return null;
     }
