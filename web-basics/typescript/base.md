@@ -94,7 +94,7 @@ const userList: User[] = [
 #### 常量定义-枚举
 
 ```ts
-function generate() {
+function q118_generate() {
   return Math.random();
 }
 
@@ -104,7 +104,7 @@ enum UserLevelCode {
   VIPUser, // 10003
   Admin = 10010,
   Mixed = 'Mixed',
-  Random = generate(),
+  Random = q118_generate(),
   // ... 
 }
 ```

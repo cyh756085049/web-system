@@ -1,4 +1,4 @@
-const wordBreak = (s, wordDict) => {
+const q139_wordBreak = (s, wordDict) => {
     // dp[i] 表示字符 s 前 i 位可以拆分成字典中出现的单词
     const dp = new Array(s.length + 1).fill(false);
 
@@ -38,4 +38,4 @@ const wordBreak = (s, wordDict) => {
 const s1 = "leetcode", wordDict1 = ["leet", "code"];
 const s2 = "applepenapple", wordDict2 = ["apple", "pen"];
 const s3 = "catsandog", wordDict3 = ["cats", "dog", "sand", "and", "cat"];
-console.log(wordBreak(s1, wordDict1), wordBreak(s2, wordDict2), wordBreak(s3, wordDict3),);
+console.log(q139_wordBreak(s1, wordDict1), q139_wordBreak(s2, wordDict2), q139_wordBreak(s3, wordDict3),);

@@ -5,7 +5,7 @@
  * 思路：动态规划，斐波那契数列
  * @param n
  */
-const climbStairs = (n) => {
+const q70_climbStairs = (n) => {
     if (n > 0 && n <= 3) {
         return n;
     }
@@ -25,4 +25,4 @@ const climbStairs = (n) => {
  */
 
 const n = 5;
-console.log(climbStairs(n));
+console.log(q70_climbStairs(n));

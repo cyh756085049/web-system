@@ -7,7 +7,7 @@
  * @param {number} amount
  * @return {number}
  */
-const coinChange = (coins, amount) => {
+const q322_coinChange = (coins, amount) => {
     // dp[i] 表示可以总金额为 i 所需的最少硬币个数
     const dp = new Array(amount + 1).fill(amount + 1);
     // 状态初始化
@@ -50,5 +50,5 @@ const coinChangeII = function(coins, amount) {
 
 const coins = [1, 2, 5], amount = 11;
 // const coins = [2], amount = 3;
-console.log(coinChange(coins, amount));
+console.log(q322_coinChange(coins, amount));
 console.log(coinChangeII(coins, amount));

@@ -3,7 +3,7 @@
  * 给定一个非负整数 numRows，生成「杨辉三角」的前 numRows 行。
  * 在「杨辉三角」中，每个数是它左上方和右上方的数的和。
  */
-const generate = (numRows) => {
+const q118_generate = (numRows) => {
     if (numRows === 1) {
         return [[1]];
     }
@@ -23,4 +23,4 @@ const generate = (numRows) => {
 }
 
 const numRows = 5;
-console.log(generate(numRows));
+console.log(q118_generate(numRows));

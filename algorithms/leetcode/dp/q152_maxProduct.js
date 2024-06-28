@@ -7,7 +7,7 @@
  * @return {number}
  */
 // 最精简版：用变量来维护动态数组的最大和最小乘积，降低空间复杂度
-const maxProduct = (nums) => {
+const q152_maxProduct = (nums) => {
     // 维护结果需要的最大乘积
     let maxProduct = nums[0];
     // 最大乘积变量：以元素i为结尾的当前所有元素最大乘积
@@ -58,5 +58,5 @@ const maxProductII = (nums) => {
  */
 
 const nums = [2,3,-2,4];
-console.log(maxProduct(nums));
+console.log(q152_maxProduct(nums));
 console.log(maxProductII(nums));

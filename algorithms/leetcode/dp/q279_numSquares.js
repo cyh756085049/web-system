@@ -8,7 +8,7 @@
  */
 
 // 完全背包问题：方式1：先遍历容器，1~n的整数数字，再遍历物品，即组成 小于等于 当前容器数字的 完全平方数
-const numSquares = (n) => {
+const q279_numSquares = (n) => {
     // 状态定义：dp[i]表示和为i的完全平方数的最少数量, 因为求dp[n],所以长度为 n + 1
     let dp = new Array(n + 1);
     // 状态初始化：dp[0] = 0, 和为0的完全平方数的最少数量为0个，即0
@@ -50,4 +50,4 @@ const numSquares2 = () => {
 }
 
 const n = 12;
-console.log(numSquares(n), numSquares2(n));
+console.log(q279_numSquares(n), numSquares2(n));
