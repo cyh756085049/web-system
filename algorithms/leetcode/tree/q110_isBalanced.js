@@ -18,7 +18,7 @@ function TreeNode(val, left, right) {
  * 复杂度：时间复杂度 O(n) 空间复杂度 O(n)
  * @param root
  */
-const isBalanced = (root) => {
+const q110_isBalanced = (root) => {
     return balanced(root) !== -1;
 }
 
@@ -73,6 +73,6 @@ root.left.left = new TreeNode(5);
 root.left.right = new TreeNode(6);
 root.left.left.left = new TreeNode(2);
 
-console.log('树1', root, '是否是二叉平衡树：', isBalanced(root));
+console.log('树1', root, '是否是二叉平衡树：', q110_isBalanced(root));
 console.log('树2', root, '是否是二叉平衡树：', isBalancedByCalculateDepth(root));
 

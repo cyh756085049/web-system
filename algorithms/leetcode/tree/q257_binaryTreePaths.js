@@ -69,5 +69,5 @@ const left = root.left = new TreeNode(2);
 root.right = new TreeNode(3);
 left.right = new TreeNode(5);
 
-console.log('深度优先遍历：', binaryTreePaths(root));
+// console.log('深度优先遍历：', binaryTreePaths(root));
 console.log('广度优先遍历：', binaryTreePathsByQueue(root));

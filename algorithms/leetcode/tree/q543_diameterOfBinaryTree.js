@@ -1,3 +1,9 @@
+function TreeNode(val, left, right) {
+    this.val = val === undefined ? 0 : val;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
+}
+
 /**
  * 543.二叉树的直径 https://leetcode.cn/problems/diameter-of-binary-tree/?envType=study-plan-v2&envId=top-100-liked
  * 给你一棵二叉树的根节点，返回该树的 直径 。
@@ -23,3 +29,12 @@ const diameterOfBinaryTree = (root) => {
     maxDepth(root);
     return res;
 }
+
+const root = new TreeNode(1);
+const left = root.left = new TreeNode(2);
+const right = root.right = new TreeNode(3);
+left.left = new TreeNode(4);
+left.right = new TreeNode(5);
+
+const maxLength =  diameterOfBinaryTree(root);
+console.log(maxLength);
