@@ -21,6 +21,7 @@
 * [将自然数向上取整](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/round-up/README.md)
 * [将对象的键值互换](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/swap-keys-values/README.md)
 * [将数组中元素名称相同的元素进行合并](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/merge-params/README.md)
+* [模拟实现数组 reduce 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/reduce/README.md)
 
 ## 手写源码
 * [手写实现 `call` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/call/README.md)
