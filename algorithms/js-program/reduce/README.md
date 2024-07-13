@@ -1,4 +1,4 @@
-### 实现数组方法 reduce
+### 实现数组方法 reduce【高途】
 ```js
 Array.prototype.myReduce = function(callback, initialValue) {
     const array = this;
