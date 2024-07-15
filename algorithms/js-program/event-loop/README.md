@@ -45,7 +45,7 @@ const p = new Promise ((resolve) => {
   },0)
   resolve('resolvel')
   resolve ('resolve2')
-  }).then (res => {
+  }).then(res => {
   console.log(res)
   setTimeout(() => {
     console.log(p);
@@ -55,15 +55,22 @@ const p = new Promise ((resolve) => {
   })
 
   console.log('p', p);
-
-/**
- * 输出结果
- * resolvel
- * finally
- * timer
- * Promise { undefined }
- */
 ```
+输出结果：
+```md
+resolvel
+finally
+timer
+Promise { undefined }
+```
+* Promise 实例 p 被创建，并立即执行。在 Promise 构造函数内部，有三次调用 resolve，但只有第一次 resolve('resolvel') 会生效，因为 Promise 的状态一旦变为 resolved 或 rejected，就不能再改变。
+* 首先是 setTimeout 会将其加入事件队列，等到主线程执行完后再执行。
+第一个 resolve('resolvel') 让 Promise 状态变为 resolved，传递的值为 'resolvel'。后面的两个 resolve 调用不会有任何效果，因为 Promise 状态已经确定了。
+* 当 Promise 状态确定为 resolved 时，会执行 then 方法注册的回调函数。这里注册的回调函数打印出了 'resolvel'，所以第一个输出是 resolve1。
+* 在 then 方法的回调函数内部，有一个 setTimeout，它被放入事件队列，因此会在主线程执行完成后执行。
+* finally 方法不接收参数（或者说接收的是 undefined），并且不会改变 Promise 实例的状态或值，它会在 Promise 状态确定后执行。所以 finally 的输出为 'finally undefined'，这里的 res 是 undefined。
+* 此时主线程执行完成，再执行事件队列中的 setTimeout。按照顺序执行 timer 和 p。
+
 ### 事件循环代码输出【猿编程】
 
 ```js
@@ -87,16 +94,6 @@ new Promise((resolve) => {
     console.log('promise2')
 })
 console.log('script end')
-
-输出：
-script start
-async1 start
-async2
-promise1
-script end
-async1 end
-promise2
-setTimeout
 ```
 
 执行以上代码的结果如下所示：
