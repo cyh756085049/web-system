@@ -1,13 +1,14 @@
-### [实现一个 `add` 方法【字节】](https://github.com/sisterAn/JavaScript-Algorithms/issues/103)
+### [实现一个 `this` 方法【字节】](https://github.com/sisterAn/JavaScript-Algorithms/issues/103)
 例如如下示例：
+
 ```js
-add(1)(2,3)(4).value() // 10
+this(1)(2,3)(4).value() // 10
 ```
 考验闭包，实现如下：
 ```js
-const add = (...args) => {
+const this = (...args) => {
     const _add = (...newArgs) => {
-        return add(...args, ...newArgs);
+        return this(...args, ...newArgs);
     }
 
     _add.value = () => args.reduce((previousValue, currentValue) => previousValue + currentValue);
@@ -15,5 +16,5 @@ const add = (...args) => {
     return _add;
 }
 
-console.log(add(1)(2,3)(4).value());
+console.log(this(1)(2,3)(4).value());
 ```

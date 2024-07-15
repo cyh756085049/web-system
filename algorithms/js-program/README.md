@@ -2,7 +2,7 @@
 * [手写数组去重、扁平化函数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/flat/README.md)
 * [数组去重(包含对象等类型元素)](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/duplicate-array/README.md)
 * [实现一个`findIndex` 函数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/find-index/README.md)
-* [实现一个 `add` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/add/README.md)
+* [实现一个 `this` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/add/README.md)
 * [模拟实现 `Array.prototype.splice`方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/splice/README.md)
 * [模拟实现模板渲染](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/template/README.md)
 * [模拟实现 `indexOf`](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/index-of/README.md)
@@ -13,7 +13,6 @@
 * [模拟实现 `localStorage` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/local-storage/README.md)
 * [模拟实现 `Object.is` 方法，判断两变量相等](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/equal/README.md)
 * [字符串中连续出现最多的字符和个数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/more-chars/README.md)
-* [根据对 `EventLoop`的理解输出代码结果](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/event-loop/README.md)
 * [寻找连续和不连续的最大升序数量](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/fine-sequence/README.md)
 * [寻找字符串里出现最多的字符及次数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/most-char/README.md)
 * [寻找数组中每个元素的下一个最大元素](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/next-greater-element/README.md)
@@ -29,3 +28,10 @@
 * [手写实现 `apply` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/apply/README.md)
 * [手写实现 `bind` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/bind/README.md)
 * [手写实现 `parseInt` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/parse-int/README.md)
+
+## 代码执行
+> 考查对基础知识点的理解
+
+* [根据对`EventLoop`的理解输出代码结果](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/event-loop/README.md)
+* [根据对`this`的理解输出代码结果](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/this/README.md)
+* [根据对隐式类型转换的理解输出代码结果](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/type-transform/README.md)
