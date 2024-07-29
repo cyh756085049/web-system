@@ -6,9 +6,9 @@ this(1)(2,3)(4).value() // 10
 ```
 考验闭包，实现如下：
 ```js
-const this = (...args) => {
+const myThis = (...args) => {
     const _add = (...newArgs) => {
-        return this(...args, ...newArgs);
+        return myThis(...args, ...newArgs);
     }
 
     _add.value = () => args.reduce((previousValue, currentValue) => previousValue + currentValue);
@@ -16,5 +16,5 @@ const this = (...args) => {
     return _add;
 }
 
-console.log(this(1)(2,3)(4).value());
+console.log(myThis(1)(2,3)(4).value());
 ```
