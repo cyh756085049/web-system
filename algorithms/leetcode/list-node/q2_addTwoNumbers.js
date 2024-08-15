@@ -9,7 +9,7 @@ function ListNode(val) {
  * @param list1
  * @param list2
  */
-const addTwoNumbers = (list1, list2) => {
+const q2_addTwoNumbers = (list1, list2) => {
     if (list1 === null) {
         return list2;
     }

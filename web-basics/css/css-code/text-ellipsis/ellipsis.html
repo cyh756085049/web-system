@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现文本省略</title>
+</head>
+<style>
+    .single-line {
+        width: 200px; /* 设置容器的宽度 */
+        border: 1px solid #ddd;
+        padding: 5px;
+        white-space: nowrap; /* 禁止换行 */
+        overflow: hidden; /* 隐藏溢出的内容 */
+        text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
+    }
+
+    .multi-line {
+        width: 200px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        display: -webkit-box; /* 使用 WebKit 箱子模型 */
+        -webkit-line-clamp: 3; /* 显示的行数 */
+        -webkit-box-orient: vertical; /* 设置子元素的排列方向为纵向 */
+        overflow: hidden; /* 隐藏溢出的内容 */
+        text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
+    }
+</style>
+<body>
+    <h3>单行省略</h3>
+    <div class="single-line">这是一个很长的文本，超出了容器的宽度，所以它会显示省略号。</div>
+    <h3>多行省略</h3>
+    <div class="multi-line">
+        这是一个很长的文本，应该可以在容器中显示多行文本，当文本行数超出设定行数时，应该显示省略号。这个文本段落会显示省略号以表示剩余的文本超出了容器的显示区域。
+    </div>
+</body>
+</html>

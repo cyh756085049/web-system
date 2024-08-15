@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用position绝对定位实现元素水平垂直居中</title>
+</head>
+<style>
+    .position-container {
+        position: relative;
+        height: 100vh; /* 使容器的高度为视口高度 */
+    }
+
+    .item {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* 将元素的中心移动到容器的中心 */
+    }
+</style>
+<body>
+    <div class="position-container">
+        <div class="item">水平垂直居中</div>
+    </div>
+</body>
+</html>

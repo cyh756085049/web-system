@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  .display-hidden {
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    display: none;
+  }
+
+  .visibility-hidden {
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    visibility: hidden;
+  }
+
+  .opacity-hidden {
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    opacity: 0;
+  }
+
+  .position-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .overview-hidden {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .clip-hidden {
+    clip-path: inset(100%);
+  }
+
+</style>
+<body>
+  <h3>display: none 隐藏方式</h3>
+  <div class="display-hidden">我被隐藏了, 不占据空间</div>
+  <h3>visibility: hidden 隐藏方式</h3>
+  <div class="visibility-hidden">我被隐藏了</div>
+  <h3>opacity: 0 隐藏方式</h3>
+  <div class="opacity-hidden">我被隐藏了, 但处于透明状态，仍然存在</div>
+  <h3>position 绝对定位隐藏方式</h3>
+  <div class="position-hidden">我被隐藏了, 被移到视口之外，不占据空间</div>
+  <h3>overview 和 height 隐藏方式</h3>
+  <div class="overview-hidden">我被隐藏了, 隐藏溢出内容，但仍然占据空间</div>
+  <h3>clip-path 隐藏方式</h3>
+  <div class="clip-hidden">我被隐藏了, 被裁剪到视口之外，但仍然占据空间</div>
+</body>
+</html>
