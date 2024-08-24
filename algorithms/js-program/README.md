@@ -22,6 +22,8 @@
 * [js实现控制并发数](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/limit-concurrency/README.md)
 * [实现多个 `promise` 串行执行](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/promise/parallelPromise.js)
 * [实现函数柯里化](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/closure/curry.js)
+* [使用 setTimeout 实现 setInterval](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/set-interval/README.md)
+* [计算两个二进制字符串的和，结果也是二进制形式](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/binary-sum/README.md)
 
 ## 手写源码
 * [手写实现 `call` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/call/README.md)
