@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击滑动</title>
+</head>
+<style>
+    .container {
+        width: 100%;
+        overflow-x: auto; /* 或者使用 overflow-x: scroll; */
+        white-space: nowrap; /* 让所有块元素水平排列 */
+    }
+
+    .block {
+        display: inline-block;
+        width: 500px; /* 设置每个块元素的宽度 */
+        height: 200px; /* 设置每个块元素的高度 */
+        border: 1px solid #ccc;
+        background: #00aadd;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="block">块元素 1</div>
+        <div class="block">块元素 2</div>
+        <div class="block">块元素 3</div>
+        <div class="block">块元素 4</div>
+        <div class="block">块元素 5</div>
+        <div class="block">块元素 6</div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const blocks = document.querySelectorAll('.block');
+        blocks.forEach((block, index) => {
+            block.addEventListener('click', function() {
+                // 计算要滚动到的位置
+                const scrollLeft = index * block.offsetWidth - (block.offsetWidth / 2);
+
+                // 滚动容器到指定位置
+                document.querySelector('.container').scrollTo({
+                    left: scrollLeft,
+                    behavior: 'smooth'  // 可以选择平滑滚动
+                });
+            });
+        });
+    });
+</script>
+</html>

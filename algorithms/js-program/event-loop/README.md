@@ -142,3 +142,90 @@ setTimeout
 - JavaScript 运行时将任务分为宏任务（例如 setTimeout）和微任务（例如 Promise 的 then 回调和 async 函数中的 await）。
 - 执行顺序遵循同步任务优先、微任务优先于宏任务的规则。
 - 所以，虽然 `setTimeout` 的延时为 0，但它仍然会在所有当前微任务执行完毕后才执行，因此它的执行顺序是在 `promise2` 之后，而在 `async1 end` 之后。
+
+### 时间循环代码输出 【商汤科技】
+```js
+(function () {
+  new Promise(() => {
+    console.log(1);
+  }).then(() => {
+    console.log(2);
+  })
+  
+  setTimeout(() => {
+    console.log(3);
+    new Promise(() => {
+      console.log(4);
+    }).then(() => {
+      console.log(5);
+    })
+  }, 0)
+  
+  setTimeout(() => {
+    console.log(6);
+  })
+})()
+```
+
+这段代码的输出结果是：
+
+```
+1
+2
+3
+4
+5
+6
+```
+
+### 解释原因
+
+我们可以逐步分析代码的执行过程来理解这个输出结果：
+#### 执行步骤
+
+1. **立即执行函数 (IIFE)**：
+   - 立即执行函数被调用，开始执行函数体内的代码。
+
+2. **创建第一个 Promise**：
+   - `new Promise(() => { console.log(1); })` 创建了一个 Promise 对象。构造函数中的代码（`console.log(1)`）是同步的，因此它立即执行并输出 `1`。
+   - `.then()` 方法被附加到这个 Promise 上，它会在当前的执行上下文（script）结束后、下一轮的微任务队列（microtask queue）中执行。这个 `.then()` 中的代码（`console.log(2)`）会在所有同步代码和 `setTimeout` 的回调函数之后执行。
+
+3. **设置第一个 `setTimeout`**：
+   - `setTimeout(() => { console.log(3); new Promise(() => { console.log(4); }).then(() => { console.log(5); }); }, 0)` 被调用，虽然延迟是 0 毫秒，但 `setTimeout` 回调总是放在宏任务队列（macrotask queue）中，所有同步代码和微任务都会在它之前执行。
+
+4. **设置第二个 `setTimeout`**：
+   - `setTimeout(() => { console.log(6); })` 也是一个宏任务回调，会在所有宏任务中的 `setTimeout` 回调之前执行。
+
+#### 执行顺序
+
+1. **同步代码执行**：
+   - `console.log(1)` 被立即执行，输出 `1`。
+
+2. **微任务执行**：
+   - 第一 Promise 的 `.then()` 被执行，输出 `2`。
+
+3. **宏任务执行**：
+   - 第一 `setTimeout` 的回调被执行：
+      - 输出 `3`。
+      - 创建一个新的 Promise，该 Promise 的构造函数立即执行，输出 `4`。
+      - 新 Promise 的 `.then()` 被安排在微任务队列中，输出 `5`。
+   - 第二 `setTimeout` 的回调被执行，输出 `6`。
+
+4. **微任务执行**：
+   - 第一 `setTimeout` 中新创建的 Promise 的 `.then()` 回调被执行，输出 `5`。
+
+### 最终输出
+
+综合上述步骤，输出顺序是：
+
+```
+1
+2
+3
+4
+5
+6
+```
+
+这个结果展示了 JavaScript 中同步代码、微任务和宏任务的执行顺序。
+

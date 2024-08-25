@@ -24,6 +24,7 @@
 * [实现函数柯里化](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/closure/curry.js)
 * [使用 setTimeout 实现 setInterval](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/set-interval/README.md)
 * [计算两个二进制字符串的和，结果也是二进制形式](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/binary-sum/README.md)
+* [左右切换块元素滑动](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/scroll/README.md)
 
 ## 手写源码
 * [手写实现 `call` 方法](https://github.com/cyh756085049/web-system/blob/main/algorithms/js-program/call/README.md)
