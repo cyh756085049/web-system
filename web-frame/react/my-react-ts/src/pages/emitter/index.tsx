@@ -1,5 +1,6 @@
 import React, {FC, useRef} from "react";
-import useEventEmitter, {EventEmitter} from "../../conponents/useEventEmitter";
+import useEventEmitter, {EventEmitter} from "../../components/useEventEmitter";
+import {EventEmitterRC} from "../../components/context/event-emitter-rc";
 
 const MessageBox: FC<{
     // @ts-ignore
@@ -38,15 +39,16 @@ const InputBox: FC<{
     );
 };
 
-const Home: React.FC = () => {
+const Emitter: React.FC = () => {
     const focus$ = useEventEmitter();
 
     return (
         <React.Fragment>
+            <h1>消息通知</h1>
             <MessageBox focus$={focus$} />
             <InputBox focus$={focus$} />
         </React.Fragment>
     );
 }
 
-export default Home;
+export default Emitter;

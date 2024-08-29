@@ -1,48 +1,32 @@
 import React, {useState} from "react";
 import { Menu } from "antd";
 import type { MenuProps } from "antd";
+import { useNavigate } from 'react-router-dom';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { hooksRouter } from './constants';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] = [
     {
-        label: 'Navigation One',
-        key: 'mail',
+        label: 'react hooks',
+        key: 'hooks',
         icon: <MailOutlined />,
+        children: hooksRouter.map(item => ({
+            key: item.key,
+            label: item.label,
+        }))
     },
-    {
-        label: 'Navigation Three - Submenu',
-        key: 'SubMenu',
-        icon: <SettingOutlined />,
-        children: [
-            {
-                type: 'group',
-                label: 'Item 1',
-                children: [
-                    { label: 'Option 1', key: 'setting:1' },
-                    { label: 'Option 2', key: 'setting:2' },
-                ],
-            },
-            {
-                type: 'group',
-                label: 'Item 2',
-                children: [
-                    { label: 'Option 3', key: 'setting:3' },
-                    { label: 'Option 4', key: 'setting:4' },
-                ],
-            },
-        ],
-    },
-
 ];
 
 const MenuItems: React.FC = () => {
-    const [currentKey, setCurrentKey] = useState('home');
+    const [currentKey, setCurrentKey] = useState('emitter');
+    const navigate = useNavigate();
 
     const handleClick: MenuProps['onClick'] = (e) => {
         console.log('click', e);
         setCurrentKey(e.key);
+        navigate(e.key);
     }
 
     return (
@@ -51,6 +35,7 @@ const MenuItems: React.FC = () => {
             selectedKeys={[currentKey]}
             items={items}
             mode="inline"
+            theme={"light"}
         />
     );
 }
