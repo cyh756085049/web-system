@@ -6,9 +6,6 @@ import { Button, Layout, Menu, theme } from 'antd';
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
-    UploadOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
 } from '@ant-design/icons';
 import MenuItems from "./menu-items";
 import './index.css';
@@ -61,6 +58,7 @@ const LayoutWrapper: React.FC = (props) => {
                     }}
                 >
                     <Routes>
+                        {/* react hooks demo router */}
                         {hooksRouter.map(router => (
                             <React.Fragment key={router.key}>
                                 <Route path={router.key} element={router.element} />

@@ -2,12 +2,13 @@ import {Button, message} from "antd";
 import useToggle from "../../components/useToggle";
 import useUnmountedRef from "../../components/useUnmountedRef";
 import {useEffect} from "react";
+import useBoolean from "../../components/useBoolean";
 
 const MyComponent = () => {
     const unmountRef = useUnmountedRef();
 
     useEffect(() => {
-        console.log(unmountRef.current);
+        console.log('第几次', unmountRef.current);
         setTimeout(() => {
             if (!unmountRef.current) {
                 message.info('component is alive');
@@ -22,13 +23,16 @@ const MyComponent = () => {
 }
 
 const UnmountRefDemo = () => {
-    const [state, { toggle }] = useToggle();
+    const [state, { toggle }] = useBoolean(true);
+
+    console.log('state', state);
 
     return (
         <div>
-            <Button onClick={toggle}>
+            <Button type={'primary'} onClick={toggle}>
                 {state ? 'unmount' : 'mount'}
             </Button>
+            {/* state 为 false 卸载组件 */}
             {state && <MyComponent />}
         </div>
     );

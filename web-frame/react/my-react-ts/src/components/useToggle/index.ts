@@ -20,8 +20,10 @@ function useToggle<D, R>(defaultValue: D = false as unknown as D, reverseValue?:
         // 默认值的反值
         const reverseValueOrigin = (reverseValue === undefined ? !defaultValue : reverseValue) as D | R;
 
+        // 切换
         const toggle = () => setState(state => (state === defaultValue ? reverseValueOrigin : defaultValue));
 
+        // 更新值
         const set = (value: D | R) => setState(value);
 
         const setLeft = () => setState(defaultValue);
