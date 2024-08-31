@@ -5,6 +5,9 @@ import UnmountRefDemo from "../hooks/unmount-ref-demo";
 import BooleanDemo from "../hooks/boolean-demo";
 import SafeStateDemo from "../hooks/safe-state-demo";
 import LockFnDemo from "../hooks/lock-fn-demo";
+import LatestDemo from "../hooks/latest-demo";
+import UnmountDemo from "../hooks/unmount-demo";
+import ThrottleFnDemo from "../hooks/throttle-fn-demo";
 
 export const hooksRouter = [
     {
@@ -39,7 +42,22 @@ export const hooksRouter = [
     },
     {
         label: 'useLockFn',
-        key: '/lock-fn-demo',
+        key: '/lock-fn',
         element: <LockFnDemo />
+    },
+    {
+        label: 'useLatest',
+        key: '/latest',
+        element: <LatestDemo />
+    },
+    {
+        label: 'useUnmount',
+        key: '/unmount',
+        element: <UnmountDemo />
+    },
+    {
+        label: 'useThrottleFn',
+        key: '/throttle-fn',
+        element: <ThrottleFnDemo />
     }
 ]

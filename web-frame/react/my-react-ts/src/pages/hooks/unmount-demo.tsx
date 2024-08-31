@@ -1,18 +1,28 @@
 import {Button, message} from "antd";
+import useToggle from "../../components/useToggle";
+import useUnmountedRef from "../../components/useUnmountedRef";
+import {useEffect} from "react";
 import useBoolean from "../../components/useBoolean";
-import useUnmount from "../../components/useUnmount";
 
 const MyComponent = () => {
-    useUnmount(() => {
-        message.info('unmount');
-    })
+    const unmountRef = useUnmountedRef();
+
+    useEffect(() => {
+        console.log('第几次', unmountRef.current);
+        setTimeout(() => {
+            if (!unmountRef.current) {
+                message.info('component is alive');
+            }
+        }, 3000);
+    }, []);
+
 
     return (
         <div>hello world</div>
     );
 }
 
-const UnmountRefDemo = () => {
+const UnmountDemo = () => {
     const [state, { toggle }] = useBoolean(true);
 
     console.log('state', state);
@@ -28,4 +38,4 @@ const UnmountRefDemo = () => {
     );
 }
 
-export default UnmountRefDemo;
+export default UnmountDemo;

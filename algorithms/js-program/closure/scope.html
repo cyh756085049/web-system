@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>作用域和闭包</title>
+    </head>
+    <body>
+        <div>作用域链和闭包测试</div>
+    </body>
+    <script>
+        /**
+         * foo 存在闭包
+         * @return {{setName: function(*): void, getName: function(): string}}
+         */
+        function foo() {
+            var myName = 'ramona';
+            let test1 = 1;
+            const test2 = 2;
+
+            var innerBar = {
+                getName: function() {
+                    console.log(test1);
+                    return myName;
+                },
+                setName: function(newName) {
+                    myName = newName;
+                }
+            }
+
+            return innerBar;
+        }
+
+        var bar = foo();
+        bar.setName('raymond');
+        bar.getName();
+        console.log(bar.getName());
+
+
+            // 不存在闭包，因为 obj.printName 中打印的值是在全局执行上下文，不是在函数内部
+        var obj = {
+            myName: 'baidu.com',
+            printName: function() {
+                console.log(myName);
+            }
+        }
+
+        function fooPrint() {
+            let myName = '百度信息';
+
+            return obj.printName;
+        }
+
+        let myName = 'test';
+        let printName = fooPrint();
+        printName(); // test
+        obj.printName(); // test
+
+    </script>
+</html>
