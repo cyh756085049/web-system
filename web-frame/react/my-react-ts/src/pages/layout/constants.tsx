@@ -8,6 +8,8 @@ import LockFnDemo from "../hooks/lock-fn-demo";
 import LatestDemo from "../hooks/latest-demo";
 import UnmountDemo from "../hooks/unmount-demo";
 import ThrottleFnDemo from "../hooks/throttle-fn-demo";
+import ThrottleDemo from "../hooks/throttle-demo";
+import UpdateEffectDemo from "../hooks/update-effect-demo";
 
 export const hooksRouter = [
     {
@@ -59,5 +61,15 @@ export const hooksRouter = [
         label: 'useThrottleFn',
         key: '/throttle-fn',
         element: <ThrottleFnDemo />
-    }
+    },
+    {
+        label: 'useThrottle',
+        key: '/throttle',
+        element: <ThrottleDemo />
+    },
+    {
+        label: 'useUpdateEffect',
+        key: '/update-effect',
+        element: <UpdateEffectDemo />
+    },
 ]
