@@ -1,3 +1,5 @@
+import React from "react";
+import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import Emitter from "../emitter";
 import Request from "../request";
 import ToggleDemo from "../hooks/toggle-demo";
@@ -11,6 +13,8 @@ import ThrottleFnDemo from "../hooks/throttle-fn-demo";
 import ThrottleDemo from "../hooks/throttle-demo";
 import UpdateEffectDemo from "../hooks/update-effect-demo";
 import DeepCompareEffectDemo from "../hooks/deep-compare-effect-demo";
+import type {MenuProps} from "antd";
+import StockComponent from "../interview/stock";
 
 export const hooksRouter = [
     {
@@ -78,4 +82,35 @@ export const hooksRouter = [
         key: '/deep-compare-effect',
         element: <DeepCompareEffectDemo />
     },
+];
+
+export const interviewRouter = [
+    {
+        label: 'stock',
+        key: '/stock',
+        element: <StockComponent />
+    },
 ]
+
+type MenuItem = Required<MenuProps>['items'][number];
+
+export const items: MenuItem[] = [
+    {
+        label: 'react hooks',
+        key: 'hooks',
+        icon: <MailOutlined />,
+        children: hooksRouter.map(item => ({
+            key: item.key,
+            label: item.label,
+        }))
+    },
+    {
+        label: 'react interview',
+        key: 'components',
+        icon: <AppstoreOutlined />,
+        children: interviewRouter.map(item => ({
+            key: item.key,
+            label: item.label,
+        }))
+    },
+];

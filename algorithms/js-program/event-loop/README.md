@@ -229,3 +229,21 @@ setTimeout
 
 这个结果展示了 JavaScript 中同步代码、微任务和宏任务的执行顺序。
 
+### 时间循环代码输出 【字节-二手车】
+```js
+setTimeout(function() {
+  console.log(1)
+}, 0);
+new Promise(function(resolve) {
+  console.log(2);
+  for(var i = 0; i < 10000; i++) {
+    if (i === 9999) {
+      resolve();
+    }
+  }
+  console.log(3);
+}).then(function() {
+  console.log(4);
+});
+console.log(5);
+```

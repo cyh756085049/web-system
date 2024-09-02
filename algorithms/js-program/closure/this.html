@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>考查箭头函数和普通函数的this指向及闭包问题</title>
+</head>
+<body>
+  <div>箭头函数和普通函数的this指向及闭包问题</div>
+</body>
+<script>
+<!-- 对象中包含方法的调用 -->
+  var obj = {
+    a: 1,
+    aa: () => {
+      console.log('箭头函数', this); // this 指向最外层的window对象
+      console.log(this.a);
+    },
+    bb: function() {
+      console.log('普通函数', this); // this 指向 obj
+      console.log(this.a);
+    }
+  }
+  obj.aa(); // undefined
+  obj.bb(); //  1
+  var aaa = obj.aa;
+  var bbb = obj.bb;
+  aaa(); // undefined
+  bbb(); // undefined
+
+
+  // 函数中的闭包
+  function func() {
+    let i = 0
+    return () => {
+      i++
+      return i
+    }
+  }
+  const func1 = func();
+  const func2 = func();
+
+  console.log(func1()) // 1
+  console.log(func2())// 1
+  console.log(func1()) // 2
+  console.log(func2()) // 2
+</script>
+</html>

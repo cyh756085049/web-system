@@ -11,7 +11,7 @@ import MenuItems from "./menu-items";
 import './index.css';
 import {EventEmitterRC} from "../../components/context/event-emitter-rc";
 import {useEventEmitter} from "../../components/context/event";
-import { hooksRouter } from './constants';
+import { hooksRouter, interviewRouter } from './constants';
 
 const { Header, Sider, Content } = Layout;
 
@@ -60,6 +60,12 @@ const LayoutWrapper: React.FC = (props) => {
                     <Routes>
                         {/* react hooks demo router */}
                         {hooksRouter.map(router => (
+                            <React.Fragment key={router.key}>
+                                <Route path={router.key} element={router.element} />
+                            </React.Fragment>
+                        ))}
+                        {/* interview router [面试题目] */}
+                        {interviewRouter.map(router => (
                             <React.Fragment key={router.key}>
                                 <Route path={router.key} element={router.element} />
                             </React.Fragment>
