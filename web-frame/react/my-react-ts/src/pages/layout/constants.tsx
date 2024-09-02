@@ -10,6 +10,7 @@ import UnmountDemo from "../hooks/unmount-demo";
 import ThrottleFnDemo from "../hooks/throttle-fn-demo";
 import ThrottleDemo from "../hooks/throttle-demo";
 import UpdateEffectDemo from "../hooks/update-effect-demo";
+import DeepCompareEffectDemo from "../hooks/deep-compare-effect-demo";
 
 export const hooksRouter = [
     {
@@ -71,5 +72,10 @@ export const hooksRouter = [
         label: 'useUpdateEffect',
         key: '/update-effect',
         element: <UpdateEffectDemo />
+    },
+    {
+        label: 'useDeepCompareEffect',
+        key: '/deep-compare-effect',
+        element: <DeepCompareEffectDemo />
     },
 ]
