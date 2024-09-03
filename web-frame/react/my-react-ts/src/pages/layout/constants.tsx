@@ -15,6 +15,7 @@ import UpdateEffectDemo from "../hooks/update-effect-demo";
 import DeepCompareEffectDemo from "../hooks/deep-compare-effect-demo";
 import type {MenuProps} from "antd";
 import StockComponent from "../interview/stock";
+import Parent from "../interview/child-interval";
 
 export const hooksRouter = [
     {
@@ -89,6 +90,11 @@ export const interviewRouter = [
         label: 'stock',
         key: '/stock',
         element: <StockComponent />
+    },
+    {
+        label: 'child-interval',
+        key: '/child-interval',
+        element: <Parent />
     },
 ]
 
