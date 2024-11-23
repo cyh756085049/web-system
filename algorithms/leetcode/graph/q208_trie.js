@@ -44,8 +44,8 @@ Trie.prototype.startsWith = function (prefix) {
 
 const trie = new Trie();
 trie.insert("apple");
-console.log(trie.search("apple"));   // 返回 True
-console.log(trie.search("app"));     // 返回 False
+// console.log(trie.search("apple"));   // 返回 True
+// console.log(trie.search("app"));     // 返回 False
 console.log(trie.startsWith("app")); // 返回 True
 trie.insert("app");
 console.log(trie.search("app"));     // 返回 True

@@ -5,7 +5,7 @@
  */
 // 解法1：从前往后依次比较字符串，获取公共前缀
 // 复杂度：时间复杂度O(s)【s表示所有字符串中字符数量的和】 空间复杂度O(1)
-const longestCommonPrefix = (strs) => {
+const q14_longestCommonPrefix = (strs) => {
     if (strs === null || strs.length === 0) {
         return '';
     }
@@ -97,6 +97,6 @@ const LCPRecTwo = (arr1, arr2) => {
 
 
 const strs = ["flower","flow","flight"];
-console.log('解法1：逐个比较字符串获取最长公共前缀：', longestCommonPrefix(strs));
+console.log('解法1：逐个比较字符串获取最长公共前缀：', q14_longestCommonPrefix(strs));
 console.log('解法2：从最长和最短字符串中获取最长公共前缀：', longestCommonPrefixII(strs));
 console.log('解法3：通过分治和归并思想获取最长公共前缀：', longestCommonPrefixIII(strs));

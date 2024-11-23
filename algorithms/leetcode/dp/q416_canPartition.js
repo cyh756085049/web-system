@@ -42,7 +42,7 @@ const canPartition = (nums) => {
             // 和大于当前数组元素
             if (j >= nums[i]) {
                 // dp[i - 1][j] = true 表示当前从 [0, i - 1] 中已经找到和为 j 的子集
-                // dp[i - 1][j - nums[i] = true, 表示当前从 [0, i - 1] 中国已经找到和为 j - nums[i] 的子集，那么 dp[i][j] 选择当前 nums[i]，则必为 true
+                // dp[i - 1][j - nums[i]] = true, 表示当前从 [0, i - 1] 中国已经找到和为 j - nums[i] 的子集，那么 dp[i][j] 选择当前 nums[i]，则必为 true
                 dp[i][j] = dp[i - 1][j] || dp[i - 1][j - nums[i]];
             } else {
                 // 和小于当前数组元素，那么要从[0, i - 1]中选择

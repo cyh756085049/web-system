@@ -62,6 +62,9 @@ const partitionMemo = (s) => {
         for (let i = start; i < s.length; i++) {
             // 如果当前start到i是回文串，就进行切割，将其添加到子集中
             if (memo[start][i] || isPartialMemo(start, i, s, memo)) {
+                // substring：基于起始和结束索引，不包含结束索引，不支持负数索引。
+                // substr：基于起始索引和长度，支持负数索引，但不推荐使用（已废弃）。
+                // slice：基于起始和结束索引，不包含结束索引，支持负数索引，功能更强大，推荐使用。
                 temp.push(s.substring(start, i + 1));
                 dfs(temp, i + 1);
                 // 上面递归结束了，撤销当前选择i，去下一轮迭代

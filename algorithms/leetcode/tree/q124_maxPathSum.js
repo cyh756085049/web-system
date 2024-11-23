@@ -7,10 +7,12 @@ function TreeNode(val, left, right) {
 /**
  * 124. 二叉树中的最大路径和 https://leetcode.cn/problems/binary-tree-maximum-path-sum/description/?envType=study-plan-v2&envId=top-100-liked
  * 思路：递归 题解：https://leetcode.cn/problems/binary-tree-maximum-path-sum/solutions/297276/shou-hui-tu-jie-hen-you-ya-de-yi-dao-dfsti-by-hyj8/?envType=study-plan-v2&envId=top-100-liked
- * @param root
+ *
+ * ol;.a g  v  t
  * @return {number}
  */
 const maxPathSum = (root) => {
+    // 设置max默认值时，因为存在负数，所以不能使用Number.MIN_VALUE, Number.MIN_VALUE 表示最小正有限数字
     let max = -Infinity;
 
     if (root === null) {
