@@ -1,4 +1,15 @@
-
+/**
+* name: p380_randomizedSet
+* description: 哈希表
+* author: Ramona Chen
+* time: 2025-06-20 20:18:47
+* {@link }
+*/
+/**
+ * 380. O(1) 时间插入、删除和获取随机元素
+ * https://leetcode.cn/problems/insert-delete-getrandom-o1/description/?envType=study-plan-v2&envId=top-interview-150
+ * @constructor
+ */
 var RandomizedSet = function() {
   this.map = new Map();
   this.values = [];
